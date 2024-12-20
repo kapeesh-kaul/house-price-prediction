@@ -1,0 +1,7 @@
+{
+    "input_dim": "TO_BE_GENERATED",
+    "encoded_dim": 64,
+    "lstm_hidden_dim": 128,
+    "lstm_num_layers": 2,
+    "output_dim": 1
+}
