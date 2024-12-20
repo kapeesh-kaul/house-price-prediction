@@ -2,12 +2,17 @@ import torch
 from torch.nn import MSELoss
 from torch.optim import Adam
 from sklearn.metrics import r2_score
+import numpy as np
 
 def train(model, train_loader, val_loader, lr=0.0001, num_epochs=50, device='cpu'):
     criterion = MSELoss()
     optimizer = Adam(model.parameters(), lr=lr)
 
     model.to(device)
+    train_losses = []
+    val_losses = []
+    r2_scores = []
+
     for epoch in range(num_epochs):
         model.train()
         train_loss = 0.0
@@ -47,10 +52,16 @@ def train(model, train_loader, val_loader, lr=0.0001, num_epochs=50, device='cpu
             # Check for NaN loss
             if torch.isnan(loss):
                 print("NaN detected in loss! Stopping training.")
-                return
+                return train_losses, val_losses, r2_scores
 
         r2, val_loss = evaluate(model, val_loader, device)
+        train_losses.append(train_loss / len(train_loader))
+        val_losses.append(val_loss)
+        r2_scores.append(r2)
+
         print(f"Epoch [{epoch + 1}/{num_epochs}], Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}, R2 Score: {r2:.4f}")
+
+    return train_losses, val_losses, r2_scores
 
 
 def evaluate(model, data_loader, device):
