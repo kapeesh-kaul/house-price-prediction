@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  20 DEC 2024 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  20 DEC 2024 00:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -377,7 +377,7 @@ Package hyperref Info: Link coloring OFF on input line 30.
 [1{C:/Users/kkape/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]) (chapters/model_architecture.tex
-<images/architecture.png, id=106, 1070.49937pt x 403.5075pt>
+<images/architecture.png, id=110, 1070.49937pt x 403.5075pt>
 File: images/architecture.png Graphic file (type png)
 <use images/architecture.png>
 Package pdftex.def Info: images/architecture.png  used on input line 13.
@@ -389,7 +389,7 @@ Package pdftex.def Info: images/architecture.png  used on input line 13.
 [3 <./images/architecture.png>]
 
 [4]
-<images/mlflow.png, id=125, 706.13812pt x 321.45094pt>
+<images/mlflow.png, id=129, 706.13812pt x 321.45094pt>
 File: images/mlflow.png Graphic file (type png)
 <use images/mlflow.png>
 Package pdftex.def Info: images/mlflow.png  used on input line 46.
@@ -399,7 +399,7 @@ Package pdftex.def Info: images/mlflow.png  used on input line 46.
 [5 <./images/mlflow.png>]) (chapters/results.tex
 
 [6]
-<images/results.png, id=137, 692.5875pt x 519.44063pt>
+<images/results.png, id=141, 692.5875pt x 519.44063pt>
 File: images/results.png Graphic file (type png)
 <use images/results.png>
 Package pdftex.def Info: images/results.png  used on input line 24.
@@ -416,20 +416,20 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 35BBCF19871158416869D3744BE09BF9;3930.
+(rerunfilecheck)             Checksum: D59C830D06C02F65386394AB23033476;4072.
  ) 
 Here is how much of TeX's memory you used:
- 11486 strings out of 473682
- 177007 string characters out of 5729115
+ 11488 strings out of 473682
+ 177027 string characters out of 5729115
  587745 words of memory out of 5000000
- 34378 multiletter control sequences out of 15000+600000
+ 34379 multiletter control sequences out of 15000+600000
  566505 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1099b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\kkape\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\kkape\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\kkape\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (9 pages, 264094 bytes).
+Output written on main.pdf (9 pages, 265565 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
