@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[margin=2cm]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{fancyheadings}
+\usepackage{listings}
+
+\setlength{\headheight}{14.49998pt}
+\addtolength{\topmargin}{-2.49998pt}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{CS715: Advanced Machine Learning}
+    \fancyhead[R]{Final Exam Report}
+    \renewcommand{\headrulewidth}{0.4pt}
+}
+\pagestyle{fancy}
+\fancyhead[L]{CS715: Advanced Machine Learning}
+\fancyhead[R]{Final Exam Report}
+
+\title{Housing Price Index Prediction using AutoEncoderLSTM}
+
+\author{
+    Kapeesh Kaul
+}
+\date{}
+
+\begin{document}
+
+    \maketitle
+
+    \begin{center}
+        \begin{abstract}
+            This project aims to predict next-month single-family house price indices for the city of Regina using an Autoencoder-LSTM deep learning model. The model leverages historical data from the MLS Home Price Index (HPI), Consumer Price Index (CPI), and Canada's Prime and Interest Rates. Data preprocessing includes interpolation, feature normalization, and removal of highly correlated attributes to enhance prediction accuracy. The Autoencoder extracts essential features, while the LSTM captures temporal dependencies, enabling robust time-series forecasting. The model is trained using a combination of prediction and reconstruction loss to ensure stability and generalizability. Evaluation metrics, including Mean Squared Error (MSE) and R² score, indicate strong predictive performance, with an R² score of 0.85 on the test set. This project demonstrates the potential of integrating advanced deep learning architectures for real estate market analysis and decision-making.
+        \end{abstract}
+    \end{center}
+
+    \input{chapters/goal}
+    \input{chapters/dataset}
+    \input{chapters/model_architecture}
+    \input{chapters/methodology}
+    \input{chapters/results}
+    \input{chapters/code}
+    \input{chapters/conclusion}
+    \input{chapters/references.tex}
+
+
+\end{document}

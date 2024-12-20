@@ -1,0 +1,21 @@
+\section{Dataset Overview}
+
+This project relies on a comprehensive dataset that includes multiple economic and housing market indicators. These variables are critical for predicting house prices as they provide insights into both macroeconomic trends and regional market dynamics.
+
+\subsection{Data Sources}
+
+The dataset incorporates the MLS Home Price Index (HPI), which measures price changes in residential properties over time and serves as a key indicator of housing market trends. The data is sourced from multiple Excel sheets, each representing a specific region in Canada. Missing dates in the data are interpolated to ensure a consistent daily frequency. The primary target for prediction is the "Single-Family Home Price Index" for the selected city.
+
+Additionally, the Consumer Price Index (CPI) represents inflation by measuring the average price change of goods and services over time. The CPI data, initially recorded monthly, is resampled to a daily frequency through linear interpolation. Historical revisions to CPI are merged into the dataset to account for adjustments in inflation metrics.
+
+The dataset also includes the Canada Prime Rate, which directly influences mortgage rates and consequently affects housing affordability and demand. Historical records of the prime rate are interpolated to ensure a uniform daily frequency across the dataset.
+
+\subsection{Preprocessing}
+
+The preprocessing phase involves several critical steps. First, all indicators are resampled to a daily frequency to align with the HPI data. Next, standard scaling is applied to transform the features to have zero mean and unit variance, facilitating efficient model training. Finally, features with a correlation coefficient greater than 0.6 with the target variable are removed to minimize redundancy.
+
+To refine the dataset, correlation analysis is conducted to identify and exclude features with high multicollinearity relative to the target variable. This step reduces redundancy and ensures that the model focuses on meaningful patterns.
+
+\subsection{Dataset Integration}
+
+The final dataset integrates the various indicators into a single table. It includes columns for the date, the Single-Family Home Price Index for the target city, the interpolated CPI with revision flags, and the daily Prime Rate values. This integrated structure allows the model to capture temporal relationships and cross-indicator patterns effectively, enabling robust house price predictions.
